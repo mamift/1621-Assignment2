@@ -1,0 +1,61 @@
+/** Link Styles **/
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.drop-down a:link {
+	text-decoration: underline;
+}
+
+article a, section a, #article-aside a:link, #left-navigation a:link {
+	color: rgb(0, 0, 110);
+}
+
+#article-aside a:hover, #left-navigation a:hover {
+	color: rgb(237, 28, 36);
+}
+
+#article-aside a:visited, #left-navigation a:visited {
+	color: rgb(90, 12, 110);
+}
+
+#content-link, #top-link, .sign-in-sign-out-link {
+	margin-right: 1em;
+}
+
+#content-link {
+	position: absolute;
+	text-align: right;
+	right: 0px;
+}
+
+#content-link a {
+	text-decoration: none;
+}
+
+#top-navigation * a {
+	text-decoration: none;
+}
+
+#top-navigation * a:hover {
+	text-decoration: underline;
+}
+
+#top-link {
+	float: right;
+	clear: both;
+
+	padding: 2em 0;
+
+	bottom: 0px;
+}
+
+#top-navigation .sign-in-sign-out-link {
+	float: right;
+}

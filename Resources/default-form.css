@@ -1,0 +1,112 @@
+/** Form styles **/
+
+#sign-in-section span:last-child, #contact-article span:last-child {
+	font-weight: normal;
+	text-decoration: none;
+}
+
+form {
+	min-width: 850px;
+	max-width: 950px;
+	margin: 3em auto 2em auto;
+	clear: right;
+}
+
+form legend {
+	font-size: 18pt;
+}
+
+form fieldset {
+	padding: 25px 30px;
+}
+
+form span {
+	display: inline-block;
+	width: 100px;
+}
+
+form label + label {
+	margin: 25px 25px 0 0;
+}
+
+form div + label {
+	margin: 25px 0 0 0;
+}
+
+form label {
+	display: block;
+}
+
+#sign-in-form {
+	width: 60%;
+	max-width: 950px;
+}
+
+#contact-form label {
+	display: inline-block;
+}
+
+#contact-form label#fname_field + label {
+	margin: 0 25px;
+}
+
+#contact-form span {
+	display: inline;
+	width: 100px;
+}
+
+select {
+	height: 35px;
+	padding: 5px;
+
+	font-size: 11pt;
+	border: 1px dotted black;
+	border-radius: 5px;
+}
+
+input[type=text], input[type=password] {
+	width: 250px;
+	height: 25px;
+	padding: 1px;
+
+	font-size: 10pt;
+}
+
+input[type=number] {
+	width: 100px;
+	height: 25px;
+}
+
+input[type=submit] {
+	display: block;
+	margin: 15px auto;
+	text-align: center;
+}
+
+label span:first-child:after {
+	content: ":";
+}
+
+label span::first-child::after {
+	content: ":";
+}
+
+textarea {
+	min-width: 600px;
+	width: auto;
+	max-width: 750px;
+	height: 150px;
+}
+
+.non-spanning-header {
+	margin: 25px 0 0 0;
+}
+
+.non-spanning-header + div {
+	margin: 0;
+}
+
+.non-spanning-header label {
+	line-height: 0;
+	margin: 0;
+}

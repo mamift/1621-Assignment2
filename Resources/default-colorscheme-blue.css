@@ -1,0 +1,65 @@
+*::selection {
+    color: #FFFFFF;
+    background: gray;
+}
+
+*::-moz-selection {
+    color: #FFFFFF;
+    background: gray;
+}
+
+article *::selection {
+    color: #D0D0D0;
+    background: #333333;
+}
+
+article *::-moz-selection {
+    color: #D0D0D0;
+    background: #333333;
+}
+
+body {
+	color: #333333;
+	background-color: #F2E9E9;
+
+	background: url("body-background-blue.png") repeat scroll 0% 0% rgb(66, 118, 182); 
+
+}
+
+header {
+	background-color: #5F9EA0;
+}
+
+header h1 {
+	color: rgb(240, 248, 255);
+	text-shadow: 0px 4px 0px #235796;
+}
+
+header p {
+    color: #fff;
+}
+
+article h1, article h2, article h3 {
+	color: #0C0C0C;
+}
+
+a {
+	color: #f0f8ff;	
+}
+
+#top-navigation {
+	background: none repeat scroll 0% 0% #7da7d9;
+	
+	box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.46);
+}
+
+#top-link a {
+	color: #333333;
+}
+
+.drop-down {
+    color: #fff;
+    
+	background: none repeat scroll 0% 0% #5F9EA0;
+	box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.46);
+}

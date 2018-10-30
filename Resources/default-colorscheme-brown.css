@@ -1,0 +1,213 @@
+
+/** Styles for 'brown' colour scheme **/
+
+*::selection {
+    color: #FFFFFF;
+    background: gray;
+}
+
+*::-moz-selection {
+    color: #FFFFFF;
+    background: gray;
+}
+
+article *::selection {
+    color: #D0D0D0;
+    background: #333333;
+}
+
+article *::-moz-selection {
+    color: #D0D0D0;
+    background: #333333;
+}
+
+body {
+	color: #333333;
+	background-color: #F2E9E9;
+
+	background: url("body-background-brown.png") repeat scroll 0% 0% rgb(66, 118, 182); 
+}
+
+header {
+	background-color: #603913;
+}
+
+header h1 {
+	color: rgb(240, 248, 255);
+	text-shadow: 0px 4px 0px #697da5;
+}
+
+header p {
+    color: #fff;
+}
+
+article h1, article h2, article h3 {
+	color: #0C0C0C;
+}
+
+a {
+	color: #f0f8ff;	
+}
+
+table {
+	-webkit-box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.46);
+	-moz-box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.46);
+	box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.46);
+}
+
+table thead {
+	background-color: rgba(196, 179, 111, 0.8);
+}
+
+table tbody {
+	background-color: rgba(19, 39, 39, 0.15);
+}
+
+#top-navigation {
+	background: none repeat scroll 0% 0% rgb(183, 146, 0);
+	
+	-webkit-box-shadow: 10px 10px 30px rgba(150, 150, 150, 0.86);
+	-moz-box-shadow: 10px 10px 30px rgba(150, 150, 150, 0.86);
+	box-shadow: 10px 10px 30px rgba(150, 150, 150, 0.86);
+}
+
+#top-link a {
+	color: #333333;
+}
+
+.drop-down {
+    color: #fff;
+    
+	background-color: rgb(144, 86, 30);
+	-webkit-box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.46);
+	-moz-box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.46);
+	box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.46);
+	background-repeat: no-repeat;
+}
+
+.drop-down#sign-in-sign-out-dropdown {
+	background-image: url('images/bg_clienty2.png');
+}
+
+.drop-down#contact-us-dropdown {
+	background-image: url('images/bg_contactus2.png');
+}
+
+.drop-down#news-dropdown {
+	background-image: url('images/bg_news2.png');
+}
+
+.drop-down#about-us-dropdown {
+	background-image: url('images/bg_lineup2.png');
+}
+
+.button {
+	background-color: #FFE788;
+	margin-left: 5px;
+	padding: 10px 12px;
+	margin-top: 6px;
+	line-height: 18px;
+	font-size: inherit;
+	color: #333;
+
+	display: inline-block;
+	text-align: center;
+
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #ffeca0;
+}
+
+.button:active {
+	background-color: #ffeca0;
+}
+
+.cssgradients .button {
+	border: 1px solid #dba500;
+
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffce38));
+	background: -webkit-linear-gradient(#ffe788, #ffce38);
+	background: -moz-linear-gradient(#ffe788, #ffce38);
+	background: linear-gradient(#ffe788, #ffce38);
+
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+
+	-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.cssgradients .button:hover {
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffe788));
+	background: -webkit-linear-gradient(#ffe788, #ffe788);
+	background: -moz-linear-gradient(#ffe788, #ffe788);
+	background: linear-gradient(#ffe788, #ffe788);
+	background-color: #ffeca0;
+}
+
+.cssgradients .button:active {
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c8a000), color-stop(100%, #c8a000));
+	background: -webkit-linear-gradient(#c8a000, #c8a000);
+	background: -moz-linear-gradient(#c8a000, #c8a000);
+	background: linear-gradient(#c8a000, #c8a000);
+	background-color: #ffeca0;
+}
+
+.borderradius form fieldset {
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+}
+
+/** Calendar **/
+
+.month-calendar time {
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffce38));
+	background: -webkit-linear-gradient(#ffe788, #ffce38);
+	background: -moz-linear-gradient(#ffe788, #ffce38);
+	background: linear-gradient(#ffe788, #ffce38);
+}
+
+.month-calendar time:hover {
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #fff1b9));
+	background: -webkit-linear-gradient(#ffe788, #fff1b9);
+	background: -moz-linear-gradient(#ffe788, #fff1b9);
+	background: linear-gradient(#ffe788, #fff1b9);
+	background-color: #ffeca0;	
+}
+
+.month-calendar time a {
+	color: #603913;
+}
+
+section.calendar.month-calendar {
+	padding: 19px;
+	border: 1px solid rgba(74, 37, 0, 0.7);
+
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+}
+
+.year-calendar time {
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c69c6d), color-stop(100%, #88592b));
+	background: -webkit-linear-gradient(#c69c6d, #88592b);
+	background: -moz-linear-gradient(#c69c6d, #88592b);
+	background: linear-gradient(#c69c6d, #88592b);
+}
+
+.year-calendar time:hover {
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c69c6d), color-stop(100%, #eacdac));
+	background: -webkit-linear-gradient(#c69c6d, #eacdac);
+	background: -moz-linear-gradient(#c69c6d, #eacdac);
+	background: linear-gradient(#c69c6d, #eacdac);
+	background-color: #ffeca0;	
+}
+
+.year-calendar time a {
+	color: #fff;
+}

@@ -1,0 +1,16 @@
+#top-navigation.stuck {
+	position: fixed;
+	border-top: none;
+	top: 0px;
+}
+
+#left-navigation.stuck {
+	float: left;
+	top: 40px;
+}
+
+.sticky-wrapper {	
+	margin: 0;
+	padding: 0;
+	height: 0;
+}

@@ -1,0 +1,32 @@
+* {
+    color: black;
+    background: none;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: black;
+}
+
+a:active {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:focus {
+	color: black;
+}
+
+.drop-down {
+    color: black;
+    
+	background: none;
+	visibility: hidden;
+	display: none;
+}

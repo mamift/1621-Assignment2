@@ -1,0 +1,191 @@
+﻿/** Text styles **/
+
+#top-navigation ul {
+    display: inline;
+
+    padding: 0;
+    margin: 0;
+
+    width: auto;
+}
+
+#left-navigation li:first-child {
+    margin-left: -25px;
+    list-style: none;
+}
+
+#article-aside {
+    font-size: 10pt;
+    line-height: 20px;
+}
+
+#header, #top-navigation, aside, nav {
+    letter-spacing: 0.5px;
+}
+
+#header, #top-navigation {
+    font-variant: small-caps;
+}
+
+#sign-in-sign-out-dropdown {
+    overflow: hidden;
+}
+
+#sign-in-section span:last-child, #contact-article span:last-child {
+    color: #a31a1a;
+}
+
+.exclamation:before {
+    content: "! ";
+}
+
+.exclamation:after {
+    content: " !";
+}
+
+.exclamation {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #a31a1a;
+}
+
+.drop-down div.left p {
+    background-color: rgba(157, 157, 157, 0.8);
+    border-radius: 5px;
+}
+
+.drop-down p {
+    line-height: 1.5em;
+}
+
+.black {
+    background-color: #000;
+    color: #000;
+}
+
+.partner-name:before {
+    content: "~ ";
+}
+
+.partner-name::before {
+    content: "~ "; 
+}
+
+.partner-name:after {
+    content: " ~";
+}
+
+.partner-name::after {
+    content: " ~";
+}
+
+.white {
+    background-color: #fff;
+    color: #fff;
+}
+
+.month-calendar {
+    text-align: left;
+}
+
+.year-calendar {
+    text-align: center;
+}
+
+h1 {
+    padding: 1.5em 0 0;
+} 
+
+h2, h3, .form-legend {
+    overflow: hidden;
+    padding: 1em 0 0.5em 0;
+}
+
+body, .drop-down {
+    line-height: 2em;
+    letter-spacing: 1px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+figcaption {
+    letter-spacing: 0.5px;
+}
+
+header h1 {
+    font-family: 'Slenderella', serif;
+    font-size: 28pt;
+    font-variant: small-caps;
+    font-weight: bold;
+    
+    text-transform: lowercase;
+
+    white-space: nowrap;
+    line-height: 1.2em;
+    letter-spacing: 5px;
+    
+    padding: 0;
+    margin: 0;
+}
+
+header h2 {
+    font-weight: normal;
+    font-size: 20pt;
+}
+
+header p {
+	padding-bottom: 0.5em;
+
+	font-style: normal;
+	font-weight: normal;
+	
+	line-height: normal;
+}
+
+article h1, section h1, article h2, section h2, article h3, section h3 {
+    text-align: center;
+}
+
+article h1, section h1, article h2, section h2, article h3, section h3, .drop-down div h2, .drop-down div h3 {
+    font-family: inherit;
+    font-weight: normal;
+}
+
+article h2, section h2, article h3, section h3, .drop-down div h2, .drop-down div h3, .form-legend {
+    text-transform: capitalize;
+}
+
+article h1, section h1 {
+    font-size: 24pt;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    
+    white-space: nowrap;
+    line-height: 2em;
+    letter-spacing: 3px;
+    
+    margin: 0;
+}
+
+article h2, section h2, .drop-down div h2 {
+    font-size: 18pt;
+    
+    white-space: nowrap;
+    line-height: 1em;
+    letter-spacing: 3px;
+    
+    margin: 0;
+}
+
+article h3, section h3, .drop-down div h3, .form-legend {
+    font-size: 14pt;
+    
+    white-space: nowrap;
+    line-height: 1em;
+    letter-spacing: 1px;
+    
+    margin: 0;
+}
+
+textarea {
+    font-size: 11pt;
+}

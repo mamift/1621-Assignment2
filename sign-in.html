@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Lockart &amp; Garder Law - Client Sign-in</title>
+	<!-- javascript -->
+	<script src="Resources/javascript/modernizr.custom.46917.js"></script>
+	<script src="Resources/javascript/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="Resources/javascript/waypoints.min.js" type="text/javascript"></script>
+	<script src="Resources/javascript/waypoints-sticky.min.js" type="text/javascript"></script>
+	<script src="Resources/javascript/lockhart-gardner.js"></script>
+	<!-- This one css file also references other css files -->
+	<link href="Resources/default.css" rel="stylesheet" type="text/css">
+	<link href="Resources/default-print.css" rel="stylesheet" type="text/css" media="print">
+</head>
+
+<body>
+	<div id="container">
+		<a name="top"></a>
+		<!-- This header displays the logo and the firm title and slogan -->
+		<header>
+			<div id="content-link">
+				<a href="#main-content">Skip to content</a>
+			</div>
+			<h1>Lockhart &amp; Gardner Law</h1>
+			<noscript>
+				For best viewing experiences, please enable Javascript in your browser.
+			</noscript>
+			<p>Attorneys at criminal and civil law.</p>
+		</header>
+		<!-- End header -->
+		<!-- This nav displays the top navgiation -->
+		<nav id="top-navigation">
+			<ul>
+				<li id="top-nav-home-link"><a href="index.html">Home</a></li>
+				<li id="top-nav-link1"><a href="about-us.html">About Us</a></li>
+				<li id="top-nav-link2"><a href="news.html">News</a></li>
+				<li id="top-nav-link3"><a href="contact.html">Contact</a></li>
+			</ul>
+			<a name="main-content"></a>
+
+			<span class="sign-in-sign-out-link">&nbsp;</span>
+		</nav>
+		<!-- End top navigation -->
+		<!-- These divs are hidden by deafult and are displayed when there's a mouse over one of the li tags in the top navigation -->
+		<div class="drop-down" id="about-us-dropdown">
+			<div class="left">
+				<p>Our greatest strengths lie in criminal defense, but we are also offer a range of other services in civil prosecution and family law.
+				<br /><br />
+				Ring us now: we're here to help: <strong><a href="tel:7739277807">(773) 927-7807</a></strong></p>
+			</div>
+			<div class="right">
+				<h3>About Us</h3>
+				<p>Lockhart &amp; Gardner - we believe in fairness and will fight for you in court.</p>
+			</div>
+		</div>
+		<div class="drop-down" id="news-dropdown">
+			<div class="left">
+				<h3>Catch-up on the latest Lockhart-Gardner news here!</h3>
+				<p>You can also read-up on latest case outcomes that have already been committed to the public record.</p>
+			</div>
+			<div class="right">
+				<h3>Most recent news headline</h3>
+				<p>
+					<ul>
+						<li><a href="news.html">Airport Link Class Action Suit Proceedings To Proceed</a></li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<div class="drop-down" id="contact-us-dropdown">
+			<div class="left">
+				<h3>Important!</h3>
+				<p>Until you have officially retained us as your lawyers, any form of communication with us is not protected under Attorney-Client privelege.</p>
+			</div>
+			<div class="right">
+				<h3>Are you a current client?</h3>
+				<p>You can communicate with your lawyers directly by clicking on the 'Sign-In' link at the top right of the page.
+			</div>
+		</div>
+		<div class="drop-down" id="sign-in-sign-out-dropdown">
+			<div class="left">
+				<h3>Are you a current client?</h3>
+				<p>
+					<a href="sign-in.html">Click here</a> to login to the website and view information about your case. Have your <strong>Client ID</strong> and <strong>Password</strong> ready.
+				</p>
+			</div>
+			<div class="right">
+				<h3>If you're not a client...</h3>
+				<p>...and you're still wanting to get into contact with a lawyer, click on the 'Contact' link instead.</p>
+			</div>
+		</div>
+		<!-- End hidden divs -->
+		<div id="content">
+			<nav id="left-navigation">
+				<ul>
+					<li>On this page:</li>
+					<li><a href="#toc1">Client Sign-in</a></li>
+					<li><a href="#toc2">Sign-in here form</a></li>
+				</ul>
+			</nav>
+			<aside id="article-aside">
+				<dl>
+					<dt>Address:</dt>
+						<dd>
+							<a href="https://maps.google.com.au/maps?q=3685+South+Archer+Avenue,+Chicago,+IL+60609,+United+States&ll=41.827155,-87.678044&spn=0.009018,0.019269&hnear=3685+S+Archer+Ave,+Chicago,+Illinois+60609,+United+States&gl=au&t=m&z=16" target="_blank">
+								3685 South Archer Avenue, Chicago, IL 60609, United States
+							</a>
+						</dd>
+					<dt>Phone: </dt>
+						<dd><a href="tel:7739277807">(773) 927-7807</a></dd>
+					<dt>E-mail: </dt>
+						<dd><a href="mailto:admin@lockhartgardner.com">admin@lockhartgardner.com</a></dd>
+				</dl>
+			</aside>
+
+			<section class="with-left-margin" id="sign-in-section">
+				<a name="toc1"></a>
+				<h1>Client Sign-In</h1>
+				<h2 class="exclamation">Important</h2>
+				<p>This page is only for registered Lockhart &amp; Gardner Clients. If you are not a client, please use our <a href="contact.html">Contact Us form</a> instead.</p>
+				<p>If you are a registered Lockhart &amp; Gardner Client, have your <strong>Client ID</strong> and <strong>Password</strong> ready.</p>
+				<p>
+					<a name="toc2"></a>
+					<form id="sign-in-form" method="post">
+						<fieldset>
+							<legend>Sign-in here</legend>
+							<label>
+								<span>Client ID</span>
+								<input type="text" id="clientid" name="clientid" placeholder="Client ID" />
+								<span>* required</span>
+							</label>
+							
+							<label>
+								<span>Password</span>
+								<input type="password" id="clientpass" name="clientpass" placeholder="password" />
+								<span>* required</span>
+							</label>
+							<input class="button" type="submit" id="clientsubmit" name="clientsubmit" value="Sign-in" onclick="return checkSigninForm();" />
+						</fieldset>
+					</form>
+				</p>
+			</section>
+		</div>
+	</div>
+
+	<footer>
+		Disclaimer: This information presented on this website is not a substitute for legal advice from an actual lawyer. 
+		<div id="top-link">
+			<a href="#top">Back to top</a>
+		</div>
+	</footer>
+
+	<a name="#bottom-anchor"></a>
+</body>
+
+</html>

@@ -1,0 +1,394 @@
+/** 
+This 'default.css' file contains style rules for all the layout elements on each page. 
+This includes most instances of the div, span, a, header, article, aside and nav tags.
+
+See the below @import rules for other style sheet files that declare the rules for how content is 
+displayed in the layout elements.
+**/
+
+@charset "utf-8";
+
+@import url('default-text.css'); /* Formats all the text  */
+@import url('default-links.css'); /* Formats all <a> links */
+@import url('default-form.css'); /* Formatting for all form elements */
+
+/* Comment and uncomment these @import statements to switch between color schemes */
+@import url('default-colorscheme-brown.css'); 
+/*@import url('default-colorscheme-dark.css'); */
+/*@import url('default-colorscheme-blue.css'); */
+/*@import url('default-colorscheme-yellowblue.css'); */
+
+/* Custom Fonts from www.google.com/webfonts‎ */
+
+@font-face {
+	font-family: 'Copse';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/copse.eot');
+	src: local('Copse'), url('fonts/copse.eot') format('embedded-opentype'), url('fonts/wpqdPiqIhpZbF5z3WfvSXg.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Slenderella';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Slenderella.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Slenderella';
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/SlenderellaBold.otf') format('opentype');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+/*  js flexbox no-flexboxlegacy canvas canvastext no-webgl no-touch geolocation postmessage no-websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize no-borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio no-localstorage no-sessionstorage webworkers applicationcache svg inlinesvg no-smil svgclippaths */
+
+body, h1, h2, h3, p, span, div, figure, article, section, li, dt, dd {
+	text-overflow: ellipsis;
+}
+
+noscript {
+	color: #fff;
+}
+
+/** Layout rules by ID **/
+
+#container {
+	margin: 0;
+	
+	min-height: 700px;
+	min-width: 901px;
+	width: auto;
+	
+	top: 0px;
+}
+
+#top-navigation, header {
+	position: relative;
+	letter-spacing: 2px;
+}
+
+#top-navigation {
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+	padding: 0.25em 0;
+	
+	text-align: left;
+	width: 100%;
+	
+	z-index: 99;
+}
+
+#top-navigation > div, #top-navigation ul > li {
+	margin: 0 0.75em;
+	
+	display: inline;
+}
+
+#content {
+	min-height: 580px;
+	height: 100%;
+}
+
+#left-navigation, aside {
+	float: left;
+	clear: both;
+	position: fixed;
+}
+
+#left-navigation {
+	width: 200px;
+	float: left;
+	top: 170px;
+
+	z-index: 98;
+}
+
+#article-aside {
+	position: fixed;
+	width: 200px;
+
+	bottom: 0px;
+
+	z-index: 97;
+}
+
+#article-aside dl dd {
+	display: list-item;
+	list-style-type: square;
+}
+
+#article-aside dl dt {
+	margin-left: 10px;
+}
+
+/** Layout rules by tag name **/
+
+header {
+	top: 0px;
+	text-align: center;
+	
+	width: 100%;
+	height: 125px;
+
+	z-index: 99;
+
+	background-image: url('images/header_gavel.png');
+	background-size: 300px 210px;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+article, section.with-left-margin {	
+	position: relative;
+	clear: right;
+
+	padding: 0 1em;
+	
+	min-width: 700px;
+	width: auto;
+	min-height: 600px;
+	height: auto;
+}
+
+.with-left-margin, footer {	
+	margin-left: 225px;
+}
+
+footer {
+	margin-top: 2em;
+	padding-top: 1em;
+
+	border-top: 1px black solid;
+	text-align: left;
+}
+
+footer div {
+	display: block;
+}
+
+figure + h3 {
+	margin-top: 55px;
+}
+
+figure {
+	width: 500px;
+	margin: 0 auto;
+}
+
+figure img {
+	position: relative;
+	border: 2px solid black;
+
+	-moz-box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.86);
+	-webkit-box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.86);
+	box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.86);
+}
+
+figure figcaption {
+	width: 485px;
+}
+
+/** Table styles **/
+
+table {
+	max-width: 1280px;
+	
+	margin: 1px auto;
+	padding: 5px;
+	border-collapse: collapse;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+
+	font-size: 11pt;
+	line-height: 1.55em;
+
+	vertical-align: text-bottom;
+}
+
+thead {
+	font-size: 14pt;
+	border: 1px solid black;
+}
+
+thead tr th {
+	padding: 9px 0;
+}
+
+tbody tr td {
+	padding: 18px;
+	border-bottom: 1px dotted black;
+}
+
+/** Drop down styles **/
+
+#sign-in-sign-out-dropdown {
+	height: auto;
+}
+
+.drop-down {
+	display: none;
+	left: 0;
+
+	position: absolute;
+
+	margin-top: 42px;
+	border-bottom: 1px black solid;
+
+	width: 100%;
+	min-height: 140px;
+
+	z-index: 100;
+}
+
+.drop-down div:first-child {
+	padding: 0.5em 1em;
+	float: left;
+
+	width: 45%;
+	height: 100%;
+}
+
+.drop-down div:first-child p {
+	padding-right: 0.5em;
+}
+
+.drop-down div:last-child {
+	padding: 0.5em 1em;
+	float: right;
+
+	width: 45%;
+	height: 100%;
+}
+
+.the-cast-i-mean-the-firm {
+	margin: 50px;
+}
+
+.left {
+	text-align: right;
+	float: right;
+}
+
+.right {
+	text-align: left;
+	float: left;
+}
+
+/** Calendar styles **/
+
+section.calendar div {
+	text-align: center;
+
+	width: 70px;
+	display: inline-table;
+}
+
+section.calendar.month-calendar .vacant {
+	visibility: hidden;
+}
+
+section.calendar {
+	margin: 45px auto;
+}
+
+section.calendar.year-calendar {
+	/*max-width: 990px;*/
+	height: 200px;
+
+	/*overflow: auto;*/
+}
+
+section.calendar.month-calendar {
+	width: 550px;
+}
+
+section.calendar span:first-child {
+	display: block;
+
+	font-size: 19pt;
+	margin: 25px 10px;
+}
+
+section.calendar time a {
+	display: block;
+
+	width: 50px;
+	height: 50px;
+
+	margin: 5px 5px 0 0;
+	padding: 3px 3px 0 0;
+
+	text-decoration: none;
+}
+
+section.calendar time a:hover { 
+	color: #000; 
+}
+
+time {
+	display: inline-block; 
+
+	width: 60px; 
+	height: 60px;
+
+	margin: 4px; 
+	padding: 1px;
+
+	text-align: right; 
+	font-size: 12pt;
+
+	border: 1px solid #c3c7c7;
+	border-radius: 5px; 
+}
+
+time.notmonth { 
+	background: #777; 
+}
+
+/** Other stuff **/
+
+video, object, embed {
+	border: 2.5px solid #88592b;
+
+	-webkit-box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.66);
+	-moz-box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.66);
+	box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.66);
+}
+
+
+/** These styles are for the jQuery plugin, waypoints.js and waypoints-sticky.js, which are used
+to keep the top-navigation stuck to the top of the viewport when the user scrolls down **/
+
+#top-navigation.stuck {
+	position: fixed;
+	border-top: none;
+	top: 0px;
+}
+
+.drop-down.stuck {
+	position: fixed;
+	margin-top: 0px;
+
+	left: 0px;
+	top: 41px; /* +1 px for the border */
+}
+
+#left-navigation.stuck {
+	float: left;
+	top: 40px;
+}
+
+.sticky-wrapper {	
+	margin: 0;
+	padding: 0;
+	height: 0;
+}
